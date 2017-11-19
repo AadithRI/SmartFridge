@@ -1,9 +1,7 @@
-#include <stdio.h>
-#include <iostream>
-#include <stdlib.h>
+#include "SmartFridge.h"
 
 int main()
 {
-	std::cout << "Good job";
+	fprintf(stdout,"Version Number %d.%d\n",SmartFridge_VERSION_MAJOR,SmartFridge_VERSION_MINOR);
 	return 0;
 }

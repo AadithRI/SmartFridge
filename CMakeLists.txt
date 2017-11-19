@@ -1,12 +1,14 @@
 cmake_minimum_required (VERSION 2.6)
 project (SmartFridge)
 
-#configure_file(
-#"${PROJECT_SOURCE_DIR}/"
-#)
+set(SmartFridge_VERSION_MAJOR 0)
+set(SmartFridge_VERSION_MINOR 1)
 
-#  Add binary tree to search file 
-#inculde_directories("${PROJECT_BINARY_DIR}")
+configure_file(
+"${PROJECT_SOURCE_DIR}/SmartFridge.h.in"
+"${PROJECT_SOURCE_DIR}/SmartFridge.h"
+)
 
-# Add the executalbe 
+include_directories("${PROJECT_BINARY_DIR}")
+
 add_executable(SmartFridge SmartFridge.cpp)

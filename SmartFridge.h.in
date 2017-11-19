@@ -1,0 +1,6 @@
+#define SmartFridge_VERSION_MAJOR @SmartFridge_VERSION_MAJOR@
+#define SmartFridge_VERSION_MINOR @SmartFridge_VERSION_MINOR@
+
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
