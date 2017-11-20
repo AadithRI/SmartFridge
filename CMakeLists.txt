@@ -9,6 +9,9 @@ configure_file(
 "${PROJECT_SOURCE_DIR}/SmartFridge.h"
 )
 
+find_package(OpenCV REQUIRED)
+
 include_directories("${PROJECT_BINARY_DIR}")
 
 add_executable(SmartFridge SmartFridge.cpp)
+target_link_libraries(SmartFridge ${OpenCV_LIBS})
